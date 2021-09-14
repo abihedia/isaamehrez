@@ -6,8 +6,8 @@
         <field name="model">res.partner</field>
         <field name="inherit_id" ref="base.view_partner_form"/>
         <field name="arch" type="xml">
-            <field name="phone" position="after">
-                <field name="name_mother" />
+            <field name="category_id" position="after">
+                <field name="name_mother" string="Mother Name" />
             </field>
         </field>
      </record>
