@@ -8,6 +8,14 @@ class Partner_inherit(models.Model):
     _description = 'inherit partner ...!'
 
     name_mother = fields.Char()
+    value2 = fields.Float(compute="_value_pc", store=True)
+    value = fields.Integer()
+    
+    @api.depends('value')
+    def _value_pc(self):
+        for record in self:
+            record.value2 = float(record.value) / 100
+    
 
 
 # class dev_first(models.Model):

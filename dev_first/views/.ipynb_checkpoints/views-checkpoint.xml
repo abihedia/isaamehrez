@@ -9,6 +9,8 @@
         <field name="arch" type="xml">
             <field name="category_id" position="after">
                 <field name="name_mother" string="Mother Name" />
+                <field name="value" string="valeur" />
+                <field name="value2" string="value diviser par 100" />
             </field>
         </field>
      </record>
