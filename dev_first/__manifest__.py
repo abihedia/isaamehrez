@@ -5,7 +5,7 @@
     'summary': """first demo""",
 
     'description': """
-        Long description of module's purpose
+        first module odoo 
     """,
 
     'author': "My Company",
