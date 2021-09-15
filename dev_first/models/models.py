@@ -10,7 +10,7 @@ class Partner_inherit(models.Model):
     name_mother = fields.Char()
     value2 = fields.Float(compute="_value_pc", store=True)
     value = fields.Integer()
-    
+    value1 = fields.Integer()
     @api.depends('value')
     def _value_pc(self):
         for record in self:
