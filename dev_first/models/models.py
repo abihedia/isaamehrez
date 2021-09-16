@@ -5,7 +5,7 @@ from odoo import models, fields, api
 
 class Partner_inherit(models.Model):
     _inherit = 'res.partner'
-    _description = 'inherit partner ...!'
+    _description = 'inherit partner for user...!'
 
     name_mother = fields.Char()
     value2 = fields.Float(compute="_value_pc", store=True)
